@@ -1,7 +1,7 @@
 kind: Cluster
 metadata:
   name: eks-gitops-cluster2
-  project: defaultproject
+  project: vijaspractice
 spec:
   blueprint: default
   cloudprovider: aws-cloud-credential
@@ -29,7 +29,7 @@ managedNodeGroups:
     withAddonPolicies:
       albIngress: true
       autoScaler: true
-  instanceType: t3.large
+  instanceType: t3.xlarge
   maxSize: 1
   minSize: 1
   name: managed-ng1
@@ -37,10 +37,3 @@ managedNodeGroups:
   privateNetworking: true
   volumeSize: 80
   volumeType: gp3
-vpc:
-  cidr: 192.168.0.0/16
-  clusterEndpoints:
-    privateAccess: true
-    publicAccess: true
-  nat:
-    gateway: Single
