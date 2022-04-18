@@ -1,5 +1,5 @@
 clusters = {
-  eks-gitops-cluster2= {
+  eks-gitops-cluster2 = {
     cluster_name = "eks-gitops-cluster2"
     project_name  = "vijayspractice"
     cluster_spec_version = "v1"
